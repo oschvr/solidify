@@ -48,7 +48,7 @@ contract SafeMath {
 	 */
 	function add(uint256 a, uint256 b) internal pure returns (uint256) {
 		uint256 c = a + b;
-		asssert(c >= a);
+		assert(c >= a);
 		return c;
 	}
 }
