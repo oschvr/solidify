@@ -43,7 +43,7 @@ contract Treasury {
 	 */
 	function transferTreasury(address newTreasury) public ifTreasury {
 		require(newTreasury != address(0));
-		TreasuryTransferred(treasury, newTreasury);
+		emit TreasuryTransferred(treasury, newTreasury);
 		treasury = newTreasury;
 	}
 }
