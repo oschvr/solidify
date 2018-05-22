@@ -1,13 +1,13 @@
 /* SafeMath is a contract that makes math operations safe
  * Smart Contract written in Solidity 0.4.18
  *
- * Author: Oscar Chavez <oschvr@gmail.com>
- * Last Updated: 22/02/2018
- * v 0.1
+ * Author: Oscar Chavez <oscar@vr3.io>
+ * Last Updated: 22/05/2018
+ * v 0.2
  *
  */
 
-pragma solidity ^0.4.18;
+pragma solidity ^0.4.21;
 
 /**
  * @title SafeMath

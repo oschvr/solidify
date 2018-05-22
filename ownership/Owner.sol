@@ -2,13 +2,13 @@
  * Owner is an ownership set of rules for smart contracts
  * Smart Contract written in Solidity 0.4.18
  * 
- * Author: Oscar Chavez <oschvr@gmail.com>
- * Last Updated: 22/02/2018
- * v 0.1
+ * Author: Oscar Chavez <oschvr@vr3.io>
+ * Last Updated: 22/05/2018
+ * v 0.2
  *
  */
 
-pragma solidity ^0.4.18;
+pragma solidity ^0.4.21;
 
 /**
  * @title Owner
@@ -43,7 +43,7 @@ contract Owner {
 	 */
 	function transferOwnership(address newOwner) public ifOwner {
 		require(newOwner != address(0));
-		emit OwnershipTransferred(owner, newOwner);
+		OwnershipTransferred(owner, newOwner);
 		owner = newOwner;
 	}
 }
